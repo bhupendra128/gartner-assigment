@@ -1,0 +1,42 @@
+.app {
+  text-align: center;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+
+  .left {
+    flex-basis: 30%;
+    margin-right: 5px;
+  }
+
+  .right {
+    flex-grow: 1;
+  }
+}
+
+.app, .left, .right {
+  border: 2px solid blue;
+}
+
+.left, .right {
+  border-bottom: none;
+}
+
+.left {
+  border-left: none;
+}
+
+.right {
+  border-right: none;
+}

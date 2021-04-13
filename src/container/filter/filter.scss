@@ -1,0 +1,29 @@
+.c-filter-genre,
+.c-filter-rating {
+  margin: 0 auto;
+  text-align: left;
+  padding: 40px;
+  min-height: 100px;
+  border: 2px solid blue;
+  margin: 5px;
+
+  .heading {
+    margin-bottom: 20px;
+  }
+}
+
+.c-filter-rating {
+  .filter-list {
+    .checkbox-rating {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .rating {
+        flex-basis: 50%;
+      }
+      .checkbox {
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

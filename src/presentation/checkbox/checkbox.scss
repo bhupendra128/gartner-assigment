@@ -1,0 +1,43 @@
+.checkbox input[type="checkbox"]{
+  opacity: 0;
+  height: 25px;
+  width: 25px;
+}
+
+
+.checkbox label {
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background: #007aff;
+    border-radius: 5px;
+    top: -5px;
+    left: -35px;
+  }
+}
+
+.checkbox label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 6px;
+  width: 9px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  left: -28px;
+  top: 2px;
+  transform: rotate(-45deg);
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+/*Unhide the checkmark on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}

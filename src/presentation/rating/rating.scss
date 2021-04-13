@@ -1,0 +1,22 @@
+.rating {
+  display: flex;
+  justify-content: center;
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      fill: #ff9f00;
+    }
+  }
+
+  .half-star-wrapper {
+    position: relative;
+    .star path {
+      fill: #e5e5e5;
+    }
+    .half-star {
+      position: absolute;
+      left: -5px;
+    }
+  }
+}
